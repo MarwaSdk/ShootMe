@@ -24,7 +24,8 @@ Widget storyButton(StoryData story, BuildContext context) {
                 height: 70.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50.0),
-                  border: Border.all(color: Colors.red, width: 2.0),
+                  border: Border.all(color: Color(0xff434ae8), width: 2.0),
+                  
                   image: DecorationImage(
                     image: NetworkImage(story.avatarUrl),
                     fit: BoxFit.cover,

@@ -1,5 +1,4 @@
 // ignore_for_file: void_checks
-   
 
 /*-----------------------Marwa Sadkaoui -------------------------------*/
 import 'package:flutter/material.dart';
@@ -25,7 +24,7 @@ class _Reservation extends State<Reservation> {
   TextEditingController location = TextEditingController();
   List<String> CategoriesList = ["FASHION", "SPORT", "LIFESTYLE", "WEEDING"];
 
-   List<Step> stepList() => [
+  List<Step> stepList() => [
         Step(
           state: _activeStepIndex <= 0 ? StepState.editing : StepState.complete,
           isActive: _activeStepIndex >= 0,
@@ -55,24 +54,22 @@ class _Reservation extends State<Reservation> {
                 ),
                 TextField(
                   controller: num,
-                  
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Number',
                   ),
                 ),
-                 const SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 TextField(
                   controller: date,
-                  
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Date',
                   ),
                 ),
-                 const SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 TextField(
@@ -132,7 +129,6 @@ class _Reservation extends State<Reservation> {
                 Text('Date : ${date.text}'),
                 Text('Location : ${location.text}'),
                 Text('Categorie: ${categories.text}'),
-                
               ],
             )))
       ];
@@ -200,4 +196,3 @@ class _Reservation extends State<Reservation> {
     );
   }
 }
-    

@@ -1,7 +1,8 @@
 // ignore_for_file: camel_case_types, use_key_in_widget_constructors, non_constant_identifier_names, prefer_typing_uninitialized_variables, prefer_const_constructors_in_immutables
- /*-----------------------Arij flihi -------------------------------*/
+
+/*-----------------------Arij flihi -------------------------------*/
 import 'package:flutter/material.dart';
-import 'package:myapp/photographer_details.dart';
+
 
 class bestphotographs extends StatefulWidget {
   @override
@@ -100,17 +101,6 @@ class single_photograph extends StatelessWidget {
           tag: photograph_name,
           child: Material(
             child: InkWell(
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => PhotographerDetails(
-                        PhotographerDetails_name: photograph_name,
-                        PhotographerDetails_price: photograph_price,
-                        PhotographerDetails_picture: photograph_picture,
-                        PhotographerDetails_email: photograph_email,
-                        PhotographerDetails_description: photograph_description,
-                        PhotographerDetails_followers: photograph_followers,
-                        PhotographerDetails_following: photograph_following,
-                        PhotographerDetails_likes: photograph_likes,
-                      ))),
               child: GridTile(
                   footer: Container(
                     color: Colors.white,
@@ -125,7 +115,6 @@ class single_photograph extends StatelessWidget {
                     photograph_picture,
                     height: 50,
                     width: 50,
-                    
                   )),
             ),
           )),

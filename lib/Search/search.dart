@@ -67,6 +67,7 @@ class SearchUser extends SearchDelegate {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
+                              
                               '${data?[index].name}',
                               style: TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.w600),
